@@ -1,0 +1,3 @@
+google-cloud
+oauth2-client
+adafruit-circuitpython-scd4x
