@@ -4,6 +4,8 @@ Prior studies have shown that people tend to be less satisfied with indoor air q
 
 To monitor and control our indoor air calibre we propose a DIY air quality monitoring system using easily available and affordable sensors for input source and a cost-effective cloud implemented monitoring system. The application produces a graphical analysis of the CO2 level and provides daily, weekly and monthly reports for the user to make well-informed decisions. The user is also intimated through alert message on peak occurrences of CO2 ppm level and hence bestows diligent assistance in self indoor air quality management.
 
+# Architecture
 
+![Alt text](/Architecture/architecture.png?raw=true)
 
 
