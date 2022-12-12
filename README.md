@@ -6,7 +6,7 @@ To monitor and control our indoor air calibre we propose a DIY air quality monit
 
 # Architecture
 
-![Alt text](/Architecture/architecture.png?raw=true)
+![Alt text](/images/architecture.png?raw=true)
 
 # GCP Components
 1.  __PubSub__ - perfect for handling incoming IoT data events.
@@ -14,4 +14,9 @@ To monitor and control our indoor air calibre we propose a DIY air quality monit
 3.  __Cloud storage__ - Store batch data.
 4.  __Cloud Dataflow__ - taking data from cloud storage and sending to PubSub. Here we use cloud function to pull data from Pub/Sub and push to BigQuery as we are not doing filteration.
 5.  __Google Cloud BigQuery__ - Data warehouse to store enormous data and make valuable insights.
+6.  __Cloud Run__ - Deply plotly & dash based dashboard.
+
+# Dashboard
+
+![Alt text](/images/dashboard.png?raw=true)
 

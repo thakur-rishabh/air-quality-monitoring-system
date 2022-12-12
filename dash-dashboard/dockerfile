@@ -1,0 +1,16 @@
+FROM python:3.10
+
+WORKDIR /usr/src/app
+
+COPY requirements.txt /
+RUN pip install --upgrade pip
+RUN pip install -r /requirements.txt
+
+COPY /app /usr/src/app/
+
+RUN useradd -m appUser
+USER appUser
+
+EXPOSE $PORT
+
+CMD python app.py
