@@ -8,4 +8,10 @@ To monitor and control our indoor air calibre we propose a DIY air quality monit
 
 ![Alt text](/Architecture/architecture.png?raw=true)
 
+# GCP Components
+1.  PubSub - perfect for handling incoming IoT data events.
+2.  Cloud function - transfer data events from PubSub to BigQuery.
+3.  Cloud storage - Store batch data.
+4.  Cloud Dataflow - taking data from cloud storage and sending to PubSub. Here we use cloud function to pull data from Pub/Sub and push to BigQuery as we are not doing filteration.
+5.  Google Cloud BigQuery - Data warehouse to store enormous data and make valuable insights.
 
